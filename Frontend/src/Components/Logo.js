@@ -1,9 +1,11 @@
 import React from "react";
 
-const Logo =() => {
+const Logo =({w,h}) => {
     return (
+        
         <div>
-            Logo
+            ABDIRASHID'ELECTRONIC
+            SHOP
         </div>
     )
 }
