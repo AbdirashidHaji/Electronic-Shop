@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { CgClose } from "react-icons/cg";
-import productCategory from '../helpers/productCategor';
+import productCategory from '../helpers/productCategory';
 import { FaCloudUploadAlt } from "react-icons/fa";
-import uploadImage from '../helpers/imageTobase64';
+import uploadImage from '../helpers/uploadImage';
 import DisplayImage from './DisplayImage';
 import { MdDelete } from "react-icons/md";
 import SummaryApi from '../common';
@@ -63,9 +63,8 @@ const UploadProduct = ({
     
   }
 
-
-  // eslint-disable-next-line no-lone-blocks
-  {/**upload product */}
+  
+  //upload product
   const handleSubmit = async(e) =>{
     e.preventDefault()
     
@@ -90,7 +89,7 @@ const UploadProduct = ({
     if(responseData.error){
       toast.error(responseData?.message)
     }
-  
+  console.log("data",data)
 
   }
 
