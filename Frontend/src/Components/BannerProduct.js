@@ -12,8 +12,6 @@ import image3Mobile from '../assests/banner/img3_mobile.jpg'
 import image4Mobile from '../assests/banner/img4_mobile.jpg'
 import image5Mobile from '../assests/banner/img5_mobile.png'
 
-import { FaAngleRight } from "react-icons/fa6";
-import { FaAngleLeft } from "react-icons/fa6";
 
 
 const BannerProduct = () => {
@@ -58,7 +56,7 @@ const BannerProduct = () => {
         },5000)
 
         return ()=> clearInterval(interval)
-    },[currentImage])
+    },[])
 
   return (
     <div className='container mx-auto px-4 rounded '>
@@ -66,8 +64,8 @@ const BannerProduct = () => {
 
                 <div className='absolute z-10 h-full w-full md:flex items-center hidden '>
                     <div className=' flex justify-between w-full text-2xl'>
-                        <button onClick={preveImage} className='bg-white shadow-md rounded-full p-1'><FaAngleLeft/></button>
-                        <button onClick={nextImage} className='bg-white shadow-md rounded-full p-1'><FaAngleRight/></button> 
+                        <button onClick={preveImage} className='bg-white shadow-md rounded-full p-1'></button>
+                        <button onClick={nextImage} className='bg-white shadow-md rounded-full p-1'></button> 
                     </div>
                 </div>
 

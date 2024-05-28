@@ -1,5 +1,4 @@
 import React from 'react'
-import CategoryList from '../Components/CategoryList'
 import BannerProduct from '../Components/BannerProduct'
 import HorizontalCardProduct from '../Components/HorizontalCardProduct'
 import VerticalCardProduct from '../Components/VerticalCardProduct'
@@ -8,7 +7,6 @@ const Home = () => {
   return (
     <div>
   
-      <CategoryList/> 
        <BannerProduct/>
 
       <HorizontalCardProduct category={"airpodes"} heading={"Top's Airpodes"}/>
