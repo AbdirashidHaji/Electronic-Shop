@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import image1 from '../assests/banner/img1.webp'
 import image2 from '../assests/banner/img2.webp'
@@ -40,7 +41,7 @@ const BannerProduct = () => {
     }
 
     const preveImage = () =>{
-        if(currentImage != 0){
+        if(currentImage !== 0){
             setCurrentImage(preve => preve - 1)
         }
     }
@@ -53,7 +54,7 @@ const BannerProduct = () => {
             }else{
                 setCurrentImage(0)
             }
-        },5000)
+        },1000000)
 
         return ()=> clearInterval(interval)
     },[])

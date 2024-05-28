@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import fetchCategoryWiseProduct from '../helpers/fetchCategoryWiseProduct'
 import displayKESCurrency from '../helpers/displayCurrency'
-// import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import addToCart from '../helpers/addToCart'
 import Context from '../context'
@@ -33,6 +32,7 @@ const CategroyWiseProductDisplay = ({category, heading}) => {
 
     useEffect(()=>{
         fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
 
