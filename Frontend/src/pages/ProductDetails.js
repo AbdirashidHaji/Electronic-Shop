@@ -56,6 +56,7 @@ const ProductDetails = () => {
 
   useEffect(()=>{
     fetchProductDetails()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[params])
 
   const handleMouseEnterProduct = (imageURL)=>{
@@ -74,6 +75,7 @@ const ProductDetails = () => {
       x,
       y
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[zoomImageCoordinate])
 
   const handleLeaveImageZoom = ()=>{

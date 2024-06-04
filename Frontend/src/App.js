@@ -45,6 +45,7 @@ function App() {
     /**user Details cart product */
     fetchUserAddToCart()
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return (
     <>

@@ -39,6 +39,7 @@ const Cart = () => {
         setLoading(true)
         handleLoading()
          setLoading(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
 
