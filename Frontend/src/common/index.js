@@ -69,13 +69,17 @@ const SummaryApi = {
         url : `${backendDomin}/api/delete-cart-product`,
         method : 'post'
     },
-    searchProduct : {
-        url : `${backendDomin}/api/search`,
+    payment : {
+        url : `${backendDomin}/api/checkout`,
+        method  : 'post'
+    },
+    getOrder : {
+        url : `${backendDomin}/api/order-list`,
         method : 'get'
     },
-    filterProduct : {
-        url : `${backendDomin}/api/filter-product`,
-        method : 'post'
+    allOrder : {
+        url : `${backendDomin}/api/all-order`,
+        method : 'get'
     }
 }
 

@@ -9,6 +9,10 @@ import AllUsers from '../pages/AllUsers'
 import AllProducts from '../pages/AllProducts'
 import ProductDetails from '../pages/ProductDetails'
 import Cart from '../pages/Cart'
+import Success from '../pages/Success'
+import Cancel from '../pages/Cancel'
+import OrderPage from '../pages/OrderPage'
+import AllOrder from '../pages/AllOrder'
 const router = createBrowserRouter([
     {
         path : "/",
@@ -39,6 +43,18 @@ const router = createBrowserRouter([
                 path : 'cart',
                 element : <Cart/>
             },
+            {
+                path : 'success',
+                element : <Success/>
+            },
+            {
+                path : "cancel",
+                element : <Cancel/>
+            },
+            {
+                path : 'order',
+                element : <OrderPage/>
+            },
             
             {
                 path : "admin-panel",
@@ -51,6 +67,10 @@ const router = createBrowserRouter([
                     {
                         path : "all-products",
                         element : <AllProducts/>
+                    },
+                    {
+                        path : "all-orders",
+                        element : <AllOrder/>
                     }
                 ]
             },
